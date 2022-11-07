@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 
 const PORT = process.env.PORT ?? 3000;
+const pokedex = require("./data/pokedex.json");
 
 // Routers import
 const mainRouter = require('./routers/mainRouter');
@@ -14,6 +15,14 @@ app.set("views", "./views");
 
 // -----MIDDLEWARES-----
 app.use(express.static("public"));
+
+app.use((req, res, next) => {
+  res.locals.pokedex = pokedex;
+  res.locals.title = "Pokedex";
+  next();
+});
+
+
 
 
 
