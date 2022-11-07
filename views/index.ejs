@@ -1,20 +1,27 @@
 <%- include("partials/head.ejs") %>
+<%- include("partials/header.ejs") %>
 
-    <h1>pokedex</h1>
-
+<main class="page-container">
     <div class="pokemon-grid">
 
         <% for( let pokemon of pokedex ) { %>
             <div class="pokemon-grid-item">
-                <img src="/images/pokemons/images/<%= pokemon.id %>.png" alt="<%= pokemon.name %> image">
-                <span># <%= pokemon.id %> </span>
-                <span><%= pokemon.name.english %> </span>
-                <span><%= pokemon.xp %> </span>
-                <a href="/pokemons/"<%= pokemon.id %>><button>view more</button> </a>
+                <div class="pokemon-grid-item__infos">
+                    <h2>
+                        <span>#<%= pokemon.id %> </span>
+                        <span><%= pokemon.name.english %> </span>
+                    </h2>
+                </div>
+                <img src="/images/pokemons/thumbnails/<%= pokemon.id %>.png" alt="<%= pokemon.name.english %> image">
+                <!-- <a href="/pokemons/<%= pokemon.id %>"><button>view more</button> </a> -->
+                <a href="/pokemons/<%= pokemon.id %>">view more +</a>
             </div>
         <% } %>
 
     </div>
+</main>
+
+
 
 
 <%- include("partials/footer.ejs") %>

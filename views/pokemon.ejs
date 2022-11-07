@@ -1,0 +1,65 @@
+<%- include("partials/head.ejs") %>
+<%- include("partials/header.ejs") %>
+
+<div class="page-container">
+    <div class="pokemon-infos">
+        <div class="top">
+            <div class="top-left">
+                <div class="pokemons-infos__image">
+                    <div class="border-image">
+                        <div class="image">
+                            <img src="/images/pokemons/thumbnails/<%= pokemonData.id %>.png" alt="<%= pokemonData.name.english %> image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <h1>#<%= pokemonData.id %> <%= pokemonData.name.english %></h1>
+                <div class="pokemons-infos__container border">
+                    <h2>/type(s) :</h2>
+                    <div class="pokemons-infos__types">
+                        <% for( let type of pokemonData.type) { %>
+                            <div class="type border"><%= type %> </div>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="pokemons-infos__container border">
+                    <h2>/Base :</h2>
+                    <div class="pokemons-infos__base">
+                        <div class="left">
+                            <h3 class="hp">HP</h3>
+                            <h3>Attack</h3>
+                            <h3>Defense</h3>
+                            <h3>Sp. Attack</h3>
+                            <h3>Sp. Defense</h3>
+                            <h3>Speed</h3>
+                        </div>
+                        <div class="right">
+                            <p class="hp"><%= pokemonData.base.HP %></p>
+                            <p><%= pokemonData.base.Attack %></p>
+                            <p><%= pokemonData.base.Defense %></p>
+                            <p><%= pokemonData.base["Sp. Attack"] %></p>
+                            <p><%= pokemonData.base["Sp. Defense"] %></p>
+                            <p><%= pokemonData.base.Speed %></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokemons-infos__container">
+                    <div class="btns">
+                        <a href="/pokemons/<%= pokemonData.id-1 %>"><span>◄ </span><p> Previous</p></a>
+                        <a href="/pokemons/<%= pokemonData.id+1 %>"><p>Next</p><span>►</span></a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="bottom">
+
+        </div>
+    </div>
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
