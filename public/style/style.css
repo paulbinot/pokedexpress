@@ -127,6 +127,7 @@ font-size: 1.2rem;
 .pokemons-infos__types .type {
   padding: 0.7rem;
   margin-right: 1rem;
+  background-color: #fff;
 }
 
 .pokemons-infos__container {
