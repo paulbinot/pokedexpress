@@ -6,5 +6,6 @@ const mainRouter = express.Router();
 
 // Routes
 mainRouter.get('/', mainController.renderHomePage);
+mainRouter.get('/pokemons/:pokemonId', mainController.renderPokemonPage);
 
 module.exports = mainRouter;

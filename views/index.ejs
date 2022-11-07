@@ -2,4 +2,19 @@
 
     <h1>pokedex</h1>
 
+    <div class="pokemon-grid">
+
+        <% for( let pokemon of pokedex ) { %>
+            <div class="pokemon-grid-item">
+                <img src="/images/pokemons/images/<%= pokemon.id %>.png" alt="<%= pokemon.name %> image">
+                <span># <%= pokemon.id %> </span>
+                <span><%= pokemon.name.english %> </span>
+                <span><%= pokemon.xp %> </span>
+                <a href="/pokemons/"<%= pokemon.id %>><button>view more</button> </a>
+            </div>
+        <% } %>
+
+    </div>
+
+
 <%- include("partials/footer.ejs") %>
