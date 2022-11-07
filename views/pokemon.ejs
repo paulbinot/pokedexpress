@@ -51,6 +51,23 @@
                         <a href="/pokemons/<%= pokemonData.id+1 %>"><p>Next</p><span>►</span></a>
                     </div>
                 </div>
+                <div class="pokemons-infos__container border">
+                    <h2>/More infos :</h2>
+                    <h3>Names in other languages :</h3>
+                    <div class="pokemons-infos__base">
+                        <div class="left">
+                            <h4>japanese</h4>
+                            <h4>chinese</h4>
+                            <h4>french</h4>
+                        </div>
+                        <div class="right">
+                            <p><%= pokemonData.name.japanese %></p>
+                            <p><%= pokemonData.name.chinese %></p>
+                            <p><%= pokemonData.name.french %></p>
+                        </div>
+                    </div>
+
+                </div>
     
             </div>
         </div>
