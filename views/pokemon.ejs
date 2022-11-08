@@ -5,6 +5,9 @@
       <div class="pokemon-infos">
         <div class="top">
           <div class="top-left">
+            <h1>
+              #<%= pokemonData.id %> <%= pokemonData.name.english %>   
+            </h1>
             <div class="pokemons-infos__image border corners">
               <img src="/images/pokemons/thumbnails/<%= pokemonData.id %>.png"
                 alt="<%= pokemonData.name.english %> image">
@@ -46,9 +49,9 @@
             </div>
           </div>
           <div class="bottom-right">
-            <h1>
+            <!-- <h1>
               #<%= pokemonData.id %> <%= pokemonData.name.english %>   
-            </h1>
+            </h1> -->
             <div class="pokemons-infos__container border corners">
               <h2>> type(s) :</h2>
               <div class="pokemons-infos__types">

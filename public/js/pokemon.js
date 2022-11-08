@@ -65,7 +65,7 @@ for (const type of types) {
     type.style.color = "#4acaba";
     type.style.borderColor = "#4acaba";
     break;
-  case 'Dragon ':
+  case 'Dragon':
     type.style.color = "#006cc3";
     type.style.borderColor = "#006cc3";
     break;
