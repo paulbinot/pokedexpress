@@ -241,3 +241,26 @@ font-size: 1.2rem;
 .borderpx {
   background-color: white;
 }
+
+/* ----------FOOTER---------- */
+
+footer {
+  background-color: rgb(27, 27, 28);
+  font-size: 0.75rem;
+  color: lightgray;
+  border-color: lightgray !important;
+  line-height: 1.2;
+}
+
+footer a {
+  color: rgb(182, 182, 112);
+  text-decoration: none;
+}
+
+footer .innerpx {
+  background-color: rgb(27, 27, 28);
+}
+
+footer .borderpx {
+  background-color: lightgray;
+}
