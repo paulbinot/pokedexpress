@@ -97,18 +97,13 @@ button {
   gap: 1rem;
 }
 
-.pokemons-infos__image .image {
+.pokemons-infos__image {
   padding: 2rem;
-  border: 3px solid white;
-  position: relative;
   background-color: rgb(27, 27, 28);
-  top: -0.4rem;
-  left: -0.4rem;
 }
 
-.pokemons-infos__image .border-image {
-  background-color: white;
-  position: relative;
+.pokemons-infos__image .innerpx {
+  background-color: rgb(27, 27, 28);
 }
 
 .pokemon-infos h1 {
@@ -175,4 +170,61 @@ font-size: 1.2rem;
 
 .btns a span {
   transform: translateY(-5px);
+}
+
+
+/* ----------CORNERS---------- */
+
+.corners {
+  position: relative;
+}
+
+.corner {
+  position: absolute !important;
+}
+
+.pixel {
+  height: 3px;
+  width: 3px;
+}
+
+.top-left-corner {
+  top: -3px;
+  left: -3px;
+}
+
+.top-right-corner {
+  top: -3px;
+  right: -3px;
+}
+
+.bottom-left-corner {
+  bottom: -3px;
+  left: -3px;
+}
+
+.bottom-right-corner {
+  bottom: -3px;
+  right: -3px;
+}
+
+.bottom-right-corner-hd {
+  bottom: -3px;
+  right: -3px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.outerpx {
+  background-color: blue;
+}
+
+.innerpx {
+  background-color: blue;
+}
+
+.borderpx {
+  background-color: white;
 }

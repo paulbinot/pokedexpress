@@ -5,25 +5,91 @@
     <div class="pokemon-infos">
         <div class="top">
             <div class="top-left">
-                <div class="pokemons-infos__image">
-                    <div class="border-image">
-                        <div class="image">
-                            <img src="/images/pokemons/thumbnails/<%= pokemonData.id %>.png" alt="<%= pokemonData.name.english %> image">
-                        </div>
+                <div class="pokemons-infos__image border corners">
+                    <img src="/images/pokemons/thumbnails/<%= pokemonData.id %>.png" alt="<%= pokemonData.name.english %> image">
+
+                    <div class="top-left-corner corner pixel outerpx"></div>
+                    <div class="top-right-corner corner pixel outerpx"></div>
+                    <div class="bottom-left-corner corner pixel outerpx"></div>
+                    <div class="bottom-right-corner-hd corner">
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
                     </div>
                 </div>
             </div>
             <div class="bottom-right">
                 <h1>#<%= pokemonData.id %> <%= pokemonData.name.english %></h1>
-                <div class="pokemons-infos__container border">
+                <div class="pokemons-infos__container border corners">
                     <h2>/type(s) :</h2>
                     <div class="pokemons-infos__types">
                         <% for( let type of pokemonData.type) { %>
-                            <div class="type border"><%= type %> </div>
+                            <div class="type border corners"><%= type %> </div>
                         <% } %>
                     </div>
+
+                    <div class="top-left-corner corner pixel outerpx"></div>
+                    <div class="top-right-corner corner pixel outerpx"></div>
+                    <div class="bottom-left-corner corner pixel outerpx"></div>
+                    <div class="bottom-right-corner-hd corner">
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                    </div>
                 </div>
-                <div class="pokemons-infos__container border">
+                <div class="pokemons-infos__container border corners">
                     <h2>/Base :</h2>
                     <div class="pokemons-infos__base">
                         <div class="left">
@@ -43,6 +109,41 @@
                             <p><%= pokemonData.base.Speed %></p>
                         </div>
                     </div>
+
+                    <div class="top-left-corner corner pixel outerpx"></div>
+                    <div class="top-right-corner corner pixel outerpx"></div>
+                    <div class="bottom-left-corner corner pixel outerpx"></div>
+                    <div class="bottom-right-corner-hd corner">
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                    </div>
                 </div>
 
                 <div class="pokemons-infos__container">
@@ -51,7 +152,7 @@
                         <a href="/pokemons/<%= pokemonData.id+1 %>"><p>Next</p><span>►</span></a>
                     </div>
                 </div>
-                <div class="pokemons-infos__container border">
+                <div class="pokemons-infos__container border corners">
                     <h2>/More infos :</h2>
                     <h3>Names in other languages :</h3>
                     <div class="pokemons-infos__base">
@@ -67,6 +168,40 @@
                         </div>
                     </div>
 
+                    <div class="top-left-corner corner pixel outerpx"></div>
+                    <div class="top-right-corner corner pixel outerpx"></div>
+                    <div class="bottom-left-corner corner pixel outerpx"></div>
+                    <div class="bottom-right-corner-hd corner">
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel innerpx"></div>
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+
+                      <div class="pixel borderpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                      <div class="pixel outerpx"></div>
+                    </div>
                 </div>
     
             </div>
