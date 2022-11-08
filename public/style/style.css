@@ -245,12 +245,15 @@ font-size: 1.2rem;
 /* ----------FOOTER---------- */
 
 footer {
-  background-color: rgb(27, 27, 28);
   font-size: 0.75rem;
   color: lightgray;
   border-color: lightgray !important;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  padding: 0 1rem 2rem 1rem;
+}
+
+footer .pokemons-infos__container {
+  background-color: rgb(27, 27, 28);
 }
 
 footer a {
@@ -264,4 +267,9 @@ footer .innerpx {
 
 footer .borderpx {
   background-color: lightgray;
+}
+
+.separator {
+  border-top: 3px dashed white;
+  margin: 1rem 0;
 }
