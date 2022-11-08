@@ -250,6 +250,7 @@ footer {
   color: lightgray;
   border-color: lightgray !important;
   line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
 footer a {
